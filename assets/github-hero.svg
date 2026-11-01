@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320" width="100%" height="auto" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="obsidian-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060911"/>
+      <stop offset="45%" stop-color="#0A0E1A"/>
+      <stop offset="100%" stop-color="#070912"/>
+    </linearGradient>
+
+    <!-- Metallic Typography Gradient -->
+    <linearGradient id="text-sheen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="70%" stop-color="#F1F5F9"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+
+    <!-- Electric Cyan-Violet Gradient -->
+    <linearGradient id="accent-cyan-violet" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+    </linearGradient>
+
+    <!-- Hairline Border Gradient -->
+    <linearGradient id="border-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.5"/>
+      <stop offset="30%" stop-color="#1E293B" stop-opacity="0.8"/>
+      <stop offset="70%" stop-color="#6366F1" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#1E293B" stop-opacity="0.6"/>
+    </linearGradient>
+
+    <!-- Accent Line Gradient -->
+    <linearGradient id="luminous-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#38BDF8" stop-opacity="0.8"/>
+      <stop offset="55%" stop-color="#818CF8" stop-opacity="0.9"/>
+      <stop offset="85%" stop-color="#6366F1" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#6366F1" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Ambient Glow Top-Right -->
+    <radialGradient id="glow-tr" cx="82%" cy="28%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#060911" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Ambient Glow Bottom-Left -->
+    <radialGradient id="glow-bl" cx="18%" cy="75%" r="45%">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#060911" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Technical Grid Pattern -->
+    <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1E293B" stroke-width="0.5" stroke-opacity="0.32"/>
+      <circle cx="0" cy="0" r="1" fill="#334155" fill-opacity="0.5"/>
+    </pattern>
+
+    <!-- Glow Filter -->
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: 'SF Mono', 'JetBrains Mono', 'Fira Code', 'Roboto Mono', Menlo, Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif; }
+  </style>
+
+  <!-- Card Background -->
+  <rect width="1000" height="320" rx="16" fill="url(#obsidian-bg)"/>
+
+  <!-- Ambient Light Layers -->
+  <rect width="1000" height="320" rx="16" fill="url(#glow-tr)"/>
+  <rect width="1000" height="320" rx="16" fill="url(#glow-bl)"/>
+
+  <!-- Technical Grid Overlay -->
+  <rect width="1000" height="320" rx="16" fill="url(#grid-pattern)"/>
+
+  <!-- Outer Architectural Border -->
+  <rect x="1" y="1" width="998" height="318" rx="15" fill="none" stroke="url(#border-glow)" stroke-width="1.2"/>
+
+  <!-- Technical Framing Marks (Corner Accents) -->
+  <path d="M 24 38 L 24 24 L 38 24" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-opacity="0.7"/>
+  <path d="M 976 38 L 976 24 L 962 24" fill="none" stroke="#818CF8" stroke-width="1.5" stroke-opacity="0.7"/>
+  <path d="M 24 282 L 24 296 L 38 296" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-opacity="0.7"/>
+  <path d="M 976 282 L 976 296 L 962 296" fill="none" stroke="#818CF8" stroke-width="1.5" stroke-opacity="0.7"/>
+
+  <!-- Crosshair Coordinates in Corners -->
+  <text x="46" y="32" fill="#475569" class="mono" font-size="9" letter-spacing="1px" opacity="0.8">SYS // 26.9124° N, 75.7873° E</text>
+  <text x="836" y="32" fill="#475569" class="mono" font-size="9" letter-spacing="1px" opacity="0.8">SYSTEM: VERIFIED // V.26</text>
+
+  <!-- RIGHT SIDE: Abstract Orbital & AI Geometric Motifs -->
+  <g transform="translate(730, 160)" opacity="0.9">
+    <!-- Outer Orbital Ring -->
+    <ellipse cx="0" cy="0" rx="135" ry="75" transform="rotate(-28)" fill="none" stroke="#334155" stroke-width="0.75" stroke-dasharray="6 4" stroke-opacity="0.6"/>
+    
+    <!-- Middle Resonant Ring -->
+    <ellipse cx="0" cy="0" rx="105" ry="55" transform="rotate(35)" fill="none" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.35"/>
+    <ellipse cx="0" cy="0" rx="75" ry="38" transform="rotate(-65)" fill="none" stroke="#818CF8" stroke-width="0.8" stroke-opacity="0.4"/>
+
+    <!-- Concentric Technical Concentric Guides -->
+    <circle cx="0" cy="0" r="48" fill="#0E1626" fill-opacity="0.6" stroke="#475569" stroke-width="0.8" stroke-opacity="0.5"/>
+    <circle cx="0" cy="0" r="32" fill="none" stroke="#38BDF8" stroke-width="1" stroke-dasharray="3 3" stroke-opacity="0.5"/>
+    <circle cx="0" cy="0" r="16" fill="#1E1B4B" stroke="#818CF8" stroke-width="1.2"/>
+
+    <!-- Central Luminous Core -->
+    <circle cx="0" cy="0" r="6" fill="#38BDF8" filter="url(#soft-glow)"/>
+    <circle cx="0" cy="0" r="3.5" fill="#FFFFFF"/>
+
+    <!-- Orbital Nodes / Planetary Data Vertices -->
+    <g transform="rotate(-28)">
+      <circle cx="135" cy="0" r="4.5" fill="#38BDF8" filter="url(#soft-glow)"/>
+      <circle cx="135" cy="0" r="2.5" fill="#FFFFFF"/>
+      <circle cx="-135" cy="0" r="3.5" fill="#818CF8"/>
+    </g>
+
+    <g transform="rotate(35)">
+      <circle cx="105" cy="0" r="4" fill="#A855F7" filter="url(#soft-glow)"/>
+      <circle cx="105" cy="0" r="2" fill="#FFFFFF"/>
+      <line x1="0" y1="0" x2="105" y2="0" stroke="#38BDF8" stroke-width="0.6" stroke-opacity="0.4" stroke-dasharray="2 2"/>
+    </g>
+
+    <g transform="rotate(-65)">
+      <circle cx="75" cy="0" r="3" fill="#38BDF8"/>
+    </g>
+
+    <!-- Micro Tech Details -->
+    <line x1="-150" y1="0" x2="-120" y2="0" stroke="#475569" stroke-width="0.8" stroke-opacity="0.5"/>
+    <line x1="120" y1="0" x2="150" y2="0" stroke="#475569" stroke-width="0.8" stroke-opacity="0.5"/>
+    <line x1="0" y1="-95" x2="0" y2="-75" stroke="#475569" stroke-width="0.8" stroke-opacity="0.5"/>
+    <line x1="0" y1="75" x2="0" y2="95" stroke="#475569" stroke-width="0.8" stroke-opacity="0.5"/>
+  </g>
+
+  <!-- LEFT SIDE: Editorial Typography & Personal Identity -->
+  <g transform="translate(68, 62)">
+    
+    <!-- Institutional Identity Pill -->
+    <g transform="translate(0, 0)">
+      <rect width="436" height="26" rx="13" fill="#0C1322" stroke="#1E293B" stroke-width="1"/>
+      <circle cx="14" cy="13" r="3.5" fill="#38BDF8" filter="url(#soft-glow)"/>
+      <circle cx="14" cy="13" r="2" fill="#FFFFFF"/>
+      <text x="26" y="17" fill="#94A3B8" class="mono" font-size="10.5" font-weight="600" letter-spacing="1px">
+        INDIAN INSTITUTE OF TECHNOLOGY JODHPUR // B.S. AI &amp; DS
+      </text>
+    </g>
+
+    <!-- Master Name Display -->
+    <text x="0" y="86" fill="url(#text-sheen)" class="sans" font-size="46" font-weight="800" letter-spacing="3.5px">
+      ARUN SINGH
+    </text>
+
+    <!-- Editorial Subtitle -->
+    <g transform="translate(0, 122)">
+      <text x="0" y="0" fill="url(#accent-cyan-violet)" class="mono" font-size="13" font-weight="600" letter-spacing="2px">
+        APPLIED AI
+      </text>
+      <text x="100" y="-1" fill="#475569" class="mono" font-size="12">·</text>
+      <text x="116" y="0" fill="#E2E8F0" class="mono" font-size="13" font-weight="600" letter-spacing="2px">
+        DATA SCIENCE
+      </text>
+      <text x="242" y="-1" fill="#475569" class="mono" font-size="12">·</text>
+      <text x="258" y="0" fill="#94A3B8" class="mono" font-size="13" font-weight="600" letter-spacing="2px">
+        SOFTWARE ENGINEERING
+      </text>
+    </g>
+
+    <!-- Mission & Engineering Philosophy -->
+    <text x="0" y="162" fill="#64748B" class="sans" font-size="13.5" font-weight="400" letter-spacing="0.2px">
+      Designing intelligent systems, deterministic AI guardrails &amp; reproducible data infrastructure.
+    </text>
+
+    <!-- Class of 2029 / Status Badge -->
+    <g transform="translate(0, 192)">
+      <rect width="186" height="22" rx="4" fill="#0A101D" stroke="#1E293B" stroke-width="0.8"/>
+      <text x="10" y="15" fill="#38BDF8" class="mono" font-size="9.5" font-weight="500" letter-spacing="0.8px">
+        GRADUATION // MAY 2029
+      </text>
+      <rect x="194" width="224" height="22" rx="4" fill="#0A101D" stroke="#1E293B" stroke-width="0.8"/>
+      <text x="204" y="15" fill="#A78BFA" class="mono" font-size="9.5" font-weight="500" letter-spacing="0.8px">
+        RESEARCH // APPLIED ML &amp; AGENTS
+      </text>
+    </g>
+
+  </g>
+
+  <!-- Bottom Luminous Horizon Line -->
+  <rect x="24" y="306" width="952" height="2" fill="url(#luminous-line)" rx="1"/>
+</svg>
